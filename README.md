@@ -58,7 +58,7 @@ However, it’s crucial to use Singleton responsibly to prevent tight coupling a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/zetaxix/Unitfy.git
+   git clone https://github.com/zetaxix/Unitfy-Singleton-Pattern.git
    ```
 2. Open the project in Unity.
 3. Press **Play** in the Unity Editor.
