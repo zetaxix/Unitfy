@@ -29,17 +29,19 @@ public class MusicManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlayMusic()
+    public void PlayMusic(AudioClip[] tracks)
     {
         if (audioSource.isPlaying)
-            audioSource.Pause();
+        {
+            audioSource.Stop();
+            Debug.Log("Müzik durduruldu.");
+        }
         else
+        {
+            audioSource.clip = tracks[0];
             audioSource.Play();
-    }
-
-    public void StopMusic()
-    {
-        audioSource.Stop();
+            Debug.Log("Müzik baþlatýldý.");
+        }
     }
 
     public void PlayRandomTrack(AudioClip[] tracks)
